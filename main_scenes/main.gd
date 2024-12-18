@@ -285,6 +285,7 @@ func add_image(path):
 #Opens File Dialog
 func _on_add_button_pressed():
 	fileDialog.visible = true
+	fileDialog.access = 2
 
 #Runs when selecting image in File Dialog
 func _on_file_dialog_file_selected(path):

@@ -293,10 +293,12 @@ func _on_file_dialog_file_selected(path):
 
 func _on_save_button_pressed():
 	$SaveDialog.visible = true
+	$SaveDialog.access = 2
 	
 
 func _on_load_button_pressed():
 	$LoadDialog.visible = true
+	$LoadDialog.access = 2
 
 #LOAD AVATAR
 func _on_load_dialog_file_selected(path):
@@ -446,6 +448,7 @@ func _on_replace_button_pressed():
 	if Global.heldSprite == null:
 		return
 	$ReplaceDialog.visible = true
+	$ReplaceDialog.access = 2
 
 func _on_replace_dialog_file_selected(path):
 	Global.heldSprite.replaceSprite(path)
